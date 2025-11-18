@@ -2,11 +2,15 @@
 
 Um conversor de moedas simples e eficiente desenvolvido em **Java puro**, sem dependências externas, usando a API pública **ExchangeRate-API**.
 
-Esse projeto oferece **6 opções fixas de conversão**, baseadas em 3 moedas principais:
+Esse projeto oferece **12 opções fixas de conversão**, baseadas em 6 moedas principais:
 
 - **USD (Dólar Americano)**
 - **BRL (Real Brasileiro)**
 - **EUR (Euro)**
+- **JPY (Iene Japonês)**
+- **GBP (Libra Esterlina)**
+- **CAD (Dólar Canadense)**
+
 
 Cada par de moedas possui conversão normal e invertida.
 
@@ -14,12 +18,19 @@ Cada par de moedas possui conversão normal e invertida.
 
 ## 🔄 Opções disponíveis
 
-1. USD → BRL  
-2. BRL → USD  
-3. USD → EUR  
-4. EUR → USD  
-5. BRL → EUR  
-6. EUR → BRL  
+1. **USD → BRL**  
+2. **BRL → USD**  
+3. **USD → EUR**  
+4. **EUR → USD**  
+5. **BRL → EUR**  
+6. **EUR → BRL**  
+7. **USD → JPY**  
+8. **JPY → USD**  
+9. **USD → GBP**  
+10. **GBP → USD**  
+11. **USD → CAD**  
+12. **CAD → USD**
+
 
 ---
 

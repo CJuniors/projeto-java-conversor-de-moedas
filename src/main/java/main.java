@@ -19,8 +19,14 @@ public class main {
         System.out.println("4. EUR → USD");
         System.out.println("5. BRL → EUR");
         System.out.println("6. EUR → BRL");
+        System.out.println("7. USD → JPY");
+        System.out.println("8. JPY → USD");
+        System.out.println("9. USD → GBP");
+        System.out.println("10. GBP → USD");
+        System.out.println("11. USD → CAD");
+        System.out.println("12. CAD → USD");
 
-        System.out.print("\nEscolha uma opção (1-6): ");
+        System.out.print("\nEscolha uma opção (1-12): ");
         int opcao = scanner.nextInt();
 
         System.out.print("Valor: ");
@@ -54,6 +60,12 @@ public class main {
             case 4: return "EUR";
             case 5: return "BRL";
             case 6: return "EUR";
+            case 7: return "USD";
+            case 8: return "JPY";
+            case 9: return "USD";
+            case 10: return "GBP";
+            case 11: return "USD";
+            case 12: return "CAD";
             default: return null;
         }
     }
@@ -66,13 +78,18 @@ public class main {
             case 4: return "USD";
             case 5: return "EUR";
             case 6: return "BRL";
+            case 7: return "JPY";
+            case 8: return "USD";
+            case 9: return "GBP";
+            case 10: return "USD";
+            case 11: return "CAD";
+            case 12: return "USD";
             default: return null;
         }
     }
 
     public static double buscarTaxa(String origem, String destino) {
         try {
-
             URL url = new URL(API_URL + origem);
             HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
             conexao.setRequestMethod("GET");
@@ -88,7 +105,6 @@ public class main {
 
             String json = resposta.toString();
 
-            
             String chave = "\"" + destino + "\":";
             int index = json.indexOf(chave);
 
